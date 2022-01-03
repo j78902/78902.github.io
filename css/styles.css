@@ -1,85 +1,113 @@
-div#content div{
-	display: inline-block;
-	width: 45%
+body {
+	margin: 0;
 }
-
-
-div#content div.leftbox{
-vertical-align: top;
-font-size: 50px;
-
-}
-
-div#content div.rightbox{
-
-}
-
-
-
-nav.menu-nav ul li.btn{
-	display: inline-block; 
-}
-
-nav.menu-nav ul li.btn{
-	list-style-type: none;
-}
-
-nav.menu-nav ul li.btn a{
-	color: white;
-	background-color: red;
-	text-decoration: none;
-	padding: 10px
-}
-
-
-nav.menu-nav ul li.btn:hover a{
-	color: blue;
-	background-color: black;
-	transition: 5s all
-}
-
-header{
+header {
 	background-color: #000;
-	font-size: 25px;
-	color: white
-
+	font-size: 20px;
+	color: #FFF;
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 1fr 10%;
+	grid-template-rows: 1fr 50px 50px;
+	gap: 10px;
 }
-
-footer{
+#pikachu {
+	grid-area: 1 / 2 ;
+}
+#kirito {
+	grid-area: 1 /  4 ;
+}
+header h1 {
+	text-align: center;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	grid-area: 2 / 1 / 2 / 6 ;
+}
+.menu {
+	grid-area: 3 / 2 / 3 / 5 ;
+	display: grid;
+	grid-template-columns: 10% 10% 10% 10%;
+	justify-items: center;
+	align-items: center;
+	column-gap: 5px;
+}
+.btn a {
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px;
 	background-color: red;
-
-
+	border-radius: 10px;
 }
-p.SAO{
-	color: blue;
-	font-size: 25px;
-	font-weight: bold;
-
-	}
-
-h1.headline{
-	font-size: 100px;
-}
-a.youtube{
-	font-size: 70px;
-	
+.btn a:hover {
+	transition: 1.2s;
+	padding: 12.5px;
+	background-color: #EC9F05;
 }
 
-a.gfaille{
-	font-size: 50px;
-
+.box {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
-
-p.msg-gfaille{
-	
-	font-size: 40px;
-	color: white
+.contenu {
+	text-align: center;
+	width: 50%;
+	margin: 50px 0px 25px 0px;
 }
-
-.msg-Entrer{
-	text-align: ;
+.contenu h2{
+	font-size: 2.2em;
 }
-.sao{
+.contenu h3{
+	font-size: 2em;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+.contenu iframe{
 	width: 100%;
-	height: 720px;
+	height: 600px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 500px 50px 525px;
+}
+.image {
+	text-align: center;
+	grid-area: 1 / 1 / 1 / 4;
+}
+.image img{
+	height: 100%;
+}
+.Box img {
+	width: 50%;
+	padding: 15px;
+	background-color: red;
+}
+.Box {
+	text-align: center;
+	margin: 20px;
+}
+.Box a {
+	text-decoration: none;
+	color: #fff;
+}
+#liens {
+	grid-area: 2 / 2;
+}
+#j78902{
+	grid-area: 3 / 1;
+	background-color: #000;
+	color: #fff;
+}
+#gfaille {
+	grid-area: 3 / 3;
+	background-color: #000;
+	color: #fff;
+}
+.Box h3 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+.Box p{
+	font-size: 18px;
 }
