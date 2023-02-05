@@ -25,7 +25,7 @@ header h1 {
 .menu {
 	grid-area: 3 / 2 / 3 / 5 ;
 	display: grid;
-	grid-template-columns: 10% 10% 10% 10% 10%;
+	grid-template-columns: 10% 10% 10% 10% 10% 10%;
 	justify-items: center;
 	align-items: center;
 	column-gap: 5px;
